@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Web Site's Title is here</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/portal.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+ </head>
+ <body>
+     <header>
+     <h1>
+        <a href="index.html"><img src="images/logo.jpg" alt="logo" class="logo"/></h1>
+     <nav class="topnav" id="myTopnav">
+       <a href="index.html">Home</a>
+       <a href="aboutus.html">AboutUS</a>
+       <a href="service.html">Service</a>
+       <a href="gallery.html">Gallery</a>
+       <a href="news.html" class="active">NEWS</a>
+       <a href="faq.html">FAQ</a>
+       <a href="booknow.html">Book Now</a>
+       <a href="contact.php">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> 
+     </nav>
+     </header>
+     <div class="wrapper">
+     <section id="news">
+        <h1>NEWS</h1>
+        <div id="cards">
+          <div class="card" id="card-first">
+            <div class="picture"><img src="https://picsum.photos/id/74/400/400" alt="" /></div>
+            <div class="description">
+              <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card-center">
+            <div class="picture"><img src="https://picsum.photos/id/88/400/400" alt="" /></div>
+            <div class="description">
+              <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card-center">
+            <div class="picture"><img src="https://picsum.photos/id/106/400/400" alt="" /></div>
+            <div class="description">
+              <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card-last">
+            <div class="picture"><img src="https://picsum.photos/id/110/400/400" alt="" /></div>
+            <div class="description">
+              <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+              </p>
+            </div>
+          </div>
+        </div>
+
+     <footer>
+        <p><small>&copy; 2023 by 
+            <a href="contact.php">Akari Yoshino</a>, All Rights Reserved ~ 
+            <a href="disclaimer.html">Disclaimer</a>,
+            <a id="html-checker" href="#">Check HTML</a> ~ 
+            <a id="css-checker" href="#">Check CSS</a></small>
+       </p>
+      </footer>
+    </div>
+       
+    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+       
+    <script>
+      //https://tinyurl.com/dynamic-html-checker
+      document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+        
+      document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+      
+      //manages mobile nav 
+      function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topnav";
+          }
+      }   
+   </script>
+       
+   </body>
+  </html>

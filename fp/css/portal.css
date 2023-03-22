@@ -1,0 +1,403 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    background-color: rgb(241, 221, 208);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: #000; 
+    background: #ff0;
+}
+
+.logo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%; 
+  background: white;
+} 
+
+
+
+h1 {
+    font-weight: normal;
+    margin: auto;
+    background: white;
+    line-height: 2.5em;
+}
+
+div.wrapper {
+    background-color: white;
+    overflow: auto;
+}
+
+.disclaimer{
+    padding:10px;
+}
+
+
+
+h2, h3 {
+    font-weight: normal;
+    margin-left: 1em;
+    line-height: 1em;
+    text-align: center;
+    font-family: Arial Black;
+}
+
+a {
+    color:darkcyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color:rgb(152, 151, 150);
+    text-decoration: none;
+} 
+
+
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+  
+  .image{ 
+    padding:10px;
+  }
+  
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+
+
+
+  ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  #cards {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card{
+    width: 300px;
+    height: 315px;
+    border: 1.5px solid lightgray;
+  }
+
+  .card:nth-child(1){
+    margin-left:10px
+  }
+  
+  .card:nth-child(2) {
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+
+  .card:nth-child(3) {
+    margin-right: 10px;
+    margin-left: 5px;
+  }  
+  
+  .card:nth-child(4) {
+    margin-right:10px
+  }
+
+  
+  .picture img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .description {
+    width: 100%;
+    height: 145px;
+    padding-right: 14px;
+    padding-left: 14px;
+    box-sizing: border-box;
+  }
+  
+  .description p {
+    font-size: 13px;
+    color: dimgray;
+  }
+
+
+/* CSS */
+.button-1 {
+  background-color: rgba(200, 159, 209, 0.791);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;
+  position:relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-1{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    margin-top: 10px;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: rgba(227, 103, 255, 0.791);
+}
+
+div.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    display:flex;
+    width: 190px;
+    display:inline-block;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* CSS */
+.button-56 {
+  align-items: center;
+  background-color: #ebbdf5;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding:25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56{
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  margin-top: 10px;
+}
+
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 5px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #a398a8;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1280px) {
+    div.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+     img.desktop {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        width:100%; 
+    }  
+
+    
+    img.tablet, img.phone {
+        display: none;
+    }
+    
+    p {
+        margin: 1em;
+    }
+    .image{ 
+    padding:10px;
+    max-width: 70%;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+}
+
+
+
+/* TABLET */
+@media all and (min-width:768px) and (max-width:1279px) {
+    div.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    img.tablet {
+       /* width: 50%;
+        float: right;
+        margin-left: 1em; */
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        width:100%
+    }
+
+    img.desktop, img.phone {
+      display: none;
+  }
+  
+    .image{ 
+    padding:8px;
+    max-width: 30%;
+    max-height: 30%;
+  }
+
+  .container {
+    align-items: center;
+    justify-content: center
+  }
+
+
+}
+
+
+
+
+
+/* PHONE */
+@media all and (max-width:767px) {
+    div.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+
+.container {
+    align-items: center;
+    justify-content: center
+  }
+
+    .image{ 
+        padding:5px;
+        max-width: 100%;
+        display: block;
+      }
+
+      img.desktop, img.tablet {
+        display: none;
+    }
+
+    img.phone {
+      /* width: 50%;
+       float: right;
+       margin-left: 1em; */
+
+       display: block;
+       margin-left: auto;
+       margin-right: auto; 
+       width:100%
+   }
+    
+
+    .text{
+        display:block;
+    }
+    .container {
+        align-items: center;
+        justify-content: center
+      }
+}
+
+
